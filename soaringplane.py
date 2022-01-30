@@ -22,6 +22,17 @@ plane.goto(-180, 0)
 plane.dx = 0
 plane.dy = 1
 
+puan = 100
+yaz = turtle.Turtle()
+yaz.speed(0)
+yaz.color('black')
+yaz.shape('square')
+yaz.hideturtle()
+yaz.penup()
+yaz.goto(0, 300)
+yaz.write('Puan: {}'.format(puan), align='center', font=('Courier', 24, 'bold'))
+
+
 yercekimi = -0.3
 
 def plane_up(x, y):
@@ -60,7 +71,7 @@ while True:
         sutun_alt.color('blue')
         sutun_alt.shape('square')
         sutun_alt.h = 40 - sutun_ust.h - random.randint(1, 10)
-        sutun_alt.shapesize(15, 2, outline=None)
+        sutun_alt.shapesize(sutun_alt.h, 2, outline=None)
         sutun_alt.penup()
         sutun_alt.goto(300, -250)
         sutun_alt.dx = -2
@@ -83,3 +94,14 @@ while True:
                 sutun[0].hideturtle()
                 sutun[1].hideturtle()
                 sutunlar.pop(sutunlar.index((sutun)))
+            if (plane.xcor()+10>sutun[0].xcor()-20) and (plane.xcor()-10<sutun[0].xcor()+20):
+                if (plane.ycor()+10>sutun[0].ycor()-sutun[0].h*10) or (plane.ycor()-10<sutun[1].ycor()+sutun[1].h*10):
+                    puan = puan - 1
+                    yaz.clear()
+                    yaz.write('Puan: {}'.format(puan), align='center', font=('Courier', 24, 'bold'))
+
+    if puan < 0:
+        yaz.clear()
+        yaz.write('Kaybettiniz'.format(puan), align='center', font=('Courier', 24, 'bold'))
+
+

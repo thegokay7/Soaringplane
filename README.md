@@ -17,3 +17,5 @@ Elimden bunlar geldi şimdiden teşekkür ederim.
 SADECE BİR UYGULAMAYLA YETİNMEK İSTEMEDİM. BU FİKİR DE AKLIMA GELİNCE YAPAYIM ZARARI OLMAZ DİYE DÜŞÜNDÜM.
 
 PyCharm ile yapılmıştır.
+
+2.Aşama demişim Final hali budur.

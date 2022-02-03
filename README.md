@@ -19,3 +19,5 @@ Gökay Deniz 032180002
 -PyCharm ile yapılmıştır.
 
 -2.Aşama demişim Final hali budur.
+
+-Kaynak olarak https://www.youtube.com/watch?v=e33B9nUr7dI bu videodan yararlandım.
